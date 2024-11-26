@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALERTE VIRUS</title>
+    <style>
+        body {
+            background-color: black;
+            color: red;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            padding-top: 20%;
+        }
+        .warning {
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .sub-text {
+            font-size: 1.2em;
+        }
+        .flashing {
+            animation: flashing 1s infinite;
+        }
+        @keyframes flashing {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="warning flashing">
+        ATTENTION ! VIRUS DÉTECTÉ !
+    </div>
+    <div class="sub-text">
+        Votre appareil est infecté par un malware !<br>
+        Votre système sera endommagé si vous ne réagissez pas immédiatement.
+    </div>
+    <br>
+    <div class="sub-text">
+        <p>Appuyez sur "OK" pour résoudre le problème.</p>
+        <button onclick="alert('Tu m'as eu ! C\'est juste une blague !')">OK</button>
+    </div>
+</body>
+</html>
